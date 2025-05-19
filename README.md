@@ -98,6 +98,25 @@ Update your repository’s `README.md` to include:
 
 <br />
 
+
+### 4. Answers
+
+Update your repository’s `README.md` to include:
+
+- A brief explanation of your design choices for the **EarlyBirdDiscountService**.
+I decided to implement all the logic of http status code and response handling all cases in the service class, in order to keep responsabilities separated.
+- Answers to:
+  - Why did you choose constructor-based DI for this lab?
+    It's easy to test and as I am using final declaration it ensures that the service has to be injected.
+  - What advantages do Postman pre-request and post-response scripts offer for automated testing?
+  They allow to test the responses from a customizable external client, and controlling better the workflow of the request.
+  - How does your application behave when the early bird feature is disabled?
+  It injects a simple service that ovverride the service functionallity with an http error code and a custom message.
+  - What are some challenges you faced when integrating advanced DI with API testing?
+  It requires to handle many edge cases test with different query parameters.
+
+<br />
+
 ## FAQs
 
 <br>
